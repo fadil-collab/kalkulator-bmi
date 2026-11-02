@@ -44,3 +44,18 @@ Label lblKategori = new Label();
 VBox root = new VBox(15, lblJudul, form, boxTombol, lblHasil, lblKategori);
 root.setPadding(new Insets(20));
 root.setAlignment(Pos.CENTER);
+
+btnHitung.setOnAction(e -> {
+    double berat = Double.parseDouble(tfBerat.getText());
+    double tinggiM = Double.parseDouble(tfTinggi.getText()) / 100.0;
+    double bmi = berat / (tinggiM * tinggiM);
+
+    String kategori;
+    if (bmi < 18.5) kategori = "Kurus";
+    else if (bmi < 25) kategori = "Normal";
+    else if (bmi < 30) kategori = "Kelebihan berat badan";
+    else kategori = "Obesitas";
+
+    lblHasil.setText(String.format("BMI Anda: %.1f", bmi));
+    lblKategori.setText("Kategori: " + kategori);
+});
