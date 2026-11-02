@@ -4,6 +4,11 @@ Fitur
 - Input berat badan (kg) dan tinggi badan (cm)
 - Menghitung BMI dan menampilkan kategorinya
 
+Tampilan
+
+![Ss Terminal] ("C:\File Fadil\Code Fadil\kalkulator-bmi\Ss Terminal VS Code.jpeg")
+![Ss Netbeams] ("C:\File Fadil\Code Fadil\kalkulator-bmi\Ss NetBeans.jpeg")
+
 Cara menjalankan
 1. Pastikan JDK dan library JavaFX sudah terpasang
 2. Buka project di NetBeans
